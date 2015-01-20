@@ -12,7 +12,8 @@ Then solve it by performing A* search(given).
 My approach:
 1. Pre-pruning: 
 - If a box is stuck in a corner, it's dead, the real cost of moving it to target is infinity.
-- 
+- if 4 unmovable object form a square, we are dead.
+
 2. calculate the sum of manhattan distance from each box to its nearest goal.
 then calculate the sum of moves from player to each box, add them togather.
 
